@@ -1,0 +1,104 @@
+/* Print Media */
+@media print
+{
+/* Tag Definitions */
+body {
+color: #000000;
+}
+/* Typesetting */
+.nobreak {page-break-inside: avoid;}
+.nul {page-break-inside: inherit;}
+p {page-break-inside: inherit;}
+.tag {page-break-inside: inherit;}
+}
+/* Screen Media */
+@media screen
+{
+/* Tag Definitions */
+body {
+color: #0000FF;
+}
+}
+/* Any Media */
+@media screen,print
+{
+/* Tag Definitions */
+body {
+	background: #FFFFFF;
+	
+}
+div {
+	display: run-in;
+	padding: 0px;
+	margin: 0px;
+}
+ul{
+	list-style: none inside;
+}
+img{
+	border: 0;
+}
+em{
+	font-style: italic;
+}
+strong{
+	font-weight: bold;
+}
+/* Link stuff */
+a:link {color: #dd1111; background: transparent; text-decoration: none;}
+a:hover {color: #dd1111; background: transparent; text-decoration: none;}
+a:active {color: #FF00FF; background: transparent;  text-decoration: none;}
+a:visited {color: #777777; background: transparent; text-decoration: none;}
+/* Placement */
+.justify {text-align: justify;}
+.center {text-align: center; margin: 0 auto;}
+.right {text-align: right;}
+.left {text-align: left;}
+.none {display: none;}
+.padd03 {margin: .025em .3125em;}
+.padd02 {margin: .05em .625em;}
+.padd01 {margin: .1em 1.25em;}
+.padd1 {margin: .2em 2.5em;}
+.padd2 {margin: .4em 5em;}
+.padd3 {margin: .6em 7.5em;}
+.padd4 {margin: .8em 10em;}
+/* Formating */
+.b {font-weight: bold;}
+.i {font-style: italic;}
+.u {text-decoration: underline;}
+/* Size */
+.s4m {font-size: 40%}
+.s3m {font-size: 51%}
+.s2m {font-size: 64%;}
+.s1m {font-size: 80%;}
+.s0 {font-size: 100%;}
+.s1 {font-size: 120%;}
+.s2 {font-size: 144%;}
+.s3 {font-size: 172%;}
+.s4 {font-size: 207%;}
+/* CSS Tables */
+div.table    {display: table; width: 90%; text-align: center;}
+div.itable   {display: inline-table; width: 90%; text-align: center;}
+div.tbody    {display: table-row-group;}
+div.thead    {display: table-header-group;}
+div.tfoot    {display: table-footer-group;}
+div.tr       {display: table-row;}
+div.td       {display: table-cell;}
+div.tcap     {display: table-caption;}
+div.colgroup {display: table-column-group;}
+div.col      {display: table-column;}
+	/* 2 Col. Tables */
+div.R2 {width: 49%; float: right;}
+div.L2 {width: 49%; float: left;}
+/* ID Text Types */
+p.booktext {text-indent: 2em; margin-top: 0; margin-bottom: 2px;}
+/* ID Text Types */
+	/* Book Text */
+#booktext {margin: .2em 2.5em;}
+#booktext div.nobreak {margin-top: 2px; margin-bottom: 4px;}
+#booktext div.nul {margin-top: 2px; margin-bottom: 4px;}
+#booktext p {text-indent: 2em; margin-top: 0; margin-bottom: 2px;}
+#booktext div.tag {margin-top: 2px; margin-bottom: 0.75em; text-align: right; font-style: italic;}
+	/* License */
+#license {width:30%;}
+}
